@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.hcorp.langlearn",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "LangLearnHipsterApp",
+    "packageName": "com.hcorp.langlearn",
+    "packageFolder": "com/hcorp/langlearn",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NjZkOWVjZDRlNmIyMzYyOTNmMmUyN2E4Y2ZmOWFmYWQ1N2JlY2FjN2ZhNjcwMjgzMjQyNGNiOWNkNTRiOTM3Y2Q5ODZmOGQ4M2JlYmVlY2VmYTlkODNkMDgxZTk4NDEzZTRlZjVkZDE4OTNkMjk0NmU4YWEwMDZiMDFkMTcxYjg=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": ["gatling", "cucumber", "protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "es", "sv"],
+    "blueprints": []
+  }
+}
