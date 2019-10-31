@@ -1,0 +1,22 @@
+entity Glossary {
+    glosName String
+    lang1 String
+    lang2 String
+}
+
+entity Words {
+	wordLang1 String
+    wordLang2 String
+}
+
+relationship ManyToMany {
+	Glossary{words(wordLang1)} to Words{glossary(glosName)}
+}
+
+relationship ManyToOne {
+    Glossary{glossary(glosName)} to User{glossary}
+}
+
+paginate Glossary with pagination
+
+paginate Words with pagination
