@@ -1,0 +1,26 @@
+{
+  "langLearnHipsterApp": {
+    "glossary": {
+      "home": {
+        "title": "Glossaries",
+        "createLabel": "Crear nuevo Glossary",
+        "createOrEditLabel": "Crear o editar Glossary",
+        "notFound": "No Glossaries found"
+      },
+      "created": "Un nuevo Glossary ha sido creado con el identificador {{ param }}",
+      "updated": "Un Glossary ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Glossary ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Glossary {{ id }}?"
+      },
+      "detail": {
+        "title": "Glossary"
+      },
+      "glosName": "Glos Name",
+      "lang1": "Lang 1",
+      "lang2": "Lang 2",
+      "user": "User",
+      "words": "Words"
+    }
+  }
+}

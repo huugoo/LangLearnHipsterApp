@@ -1,0 +1,24 @@
+{
+  "langLearnHipsterApp": {
+    "words": {
+      "home": {
+        "title": "Words",
+        "createLabel": "Skapa en ny Words",
+        "createOrEditLabel": "Skapa eller ändra en Words",
+        "notFound": "No Words found"
+      },
+      "created": "En ny Words är skapad med id {{ param }}",
+      "updated": "En Words är uppdaterad med id  {{ param }}",
+      "deleted": "En Words är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Words {{ id }}?"
+      },
+      "detail": {
+        "title": "Words"
+      },
+      "wordLang1": "Word Lang 1",
+      "wordLang2": "Word Lang 2",
+      "glossary": "Glossary"
+    }
+  }
+}

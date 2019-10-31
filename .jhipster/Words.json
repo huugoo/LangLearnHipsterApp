@@ -1,0 +1,33 @@
+{
+    "name": "Words",
+    "fields": [
+        {
+            "fieldName": "wordLang1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wordLang2",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "glossary",
+            "otherEntityRelationshipName": "words",
+            "relationshipName": "glossary",
+            "otherEntityField": "glosName",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191031122557",
+    "entityTableName": "words",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

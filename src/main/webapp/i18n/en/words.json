@@ -1,0 +1,24 @@
+{
+  "langLearnHipsterApp": {
+    "words": {
+      "home": {
+        "title": "Words",
+        "createLabel": "Create a new Words",
+        "createOrEditLabel": "Create or edit a Words",
+        "notFound": "No Words found"
+      },
+      "created": "A new Words is created with identifier {{ param }}",
+      "updated": "A Words is updated with identifier {{ param }}",
+      "deleted": "A Words is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Words {{ id }}?"
+      },
+      "detail": {
+        "title": "Words"
+      },
+      "wordLang1": "Word Lang 1",
+      "wordLang2": "Word Lang 2",
+      "glossary": "Glossary"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Glossary",
+    "fields": [
+        {
+            "fieldName": "glosName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lang1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lang2",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "glossary",
+            "relationshipName": "user",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "words",
+            "otherEntityRelationshipName": "glossary",
+            "relationshipName": "words",
+            "otherEntityField": "wordLang1",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20191031122556",
+    "entityTableName": "glossary",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

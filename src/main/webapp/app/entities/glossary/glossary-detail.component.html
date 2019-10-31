@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="glossary">
+            <h2><span jhiTranslate="langLearnHipsterApp.glossary.detail.title">Glossary</span> {{glossary.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="langLearnHipsterApp.glossary.glosName">Glos Name</span></dt>
+                <dd>
+                    <span>{{glossary.glosName}}</span>
+                </dd>
+                <dt><span jhiTranslate="langLearnHipsterApp.glossary.lang1">Lang 1</span></dt>
+                <dd>
+                    <span>{{glossary.lang1}}</span>
+                </dd>
+                <dt><span jhiTranslate="langLearnHipsterApp.glossary.lang2">Lang 2</span></dt>
+                <dd>
+                    <span>{{glossary.lang2}}</span>
+                </dd>
+                <dt><span jhiTranslate="langLearnHipsterApp.glossary.user">User</span></dt>
+                <dd>
+                    {{glossary.user?.login}}
+                </dd>
+                <dt><span jhiTranslate="langLearnHipsterApp.glossary.words">Words</span></dt>
+                <dd>
+                    <span *ngFor="let words of glossary.words; let last = last">
+                        <a [routerLink]="['/words', words?.id, 'view' ]">{{words.wordLang1}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/glossary', glossary.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

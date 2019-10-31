@@ -14,9 +14,9 @@ relationship ManyToMany {
 }
 
 relationship ManyToOne {
-    Glossary{glossary(glosName)} to User{glossary}
+    Glossary{user(login)} to User
 }
 
-paginate Glossary with pagination
+paginate Glossary with infinite-scroll
 
-paginate Words with pagination
+paginate Words with infinite-scroll

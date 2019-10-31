@@ -45,6 +45,10 @@ public class CacheConfiguration {
             createCache(cm, com.hcorp.langlearn.domain.User.class.getName());
             createCache(cm, com.hcorp.langlearn.domain.Authority.class.getName());
             createCache(cm, com.hcorp.langlearn.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.hcorp.langlearn.domain.Glossary.class.getName());
+            createCache(cm, com.hcorp.langlearn.domain.Glossary.class.getName() + ".words");
+            createCache(cm, com.hcorp.langlearn.domain.Words.class.getName());
+            createCache(cm, com.hcorp.langlearn.domain.Words.class.getName() + ".glossaries");
             // jhipster-needle-ehcache-add-entry
         };
     }
