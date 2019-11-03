@@ -13,12 +13,15 @@ import { IUser } from 'app/core/user/user.model';
 import { UserService } from 'app/core/user/user.service';
 import { IWords } from 'app/shared/model/words.model';
 import { WordsService } from 'app/entities/words/words.service';
+import { AccountService } from 'app/core/auth/account.service';
+import { Account } from 'app/core/user/account.model';
 
 @Component({
   selector: 'jhi-glossary-update',
   templateUrl: './glossary-update.component.html'
 })
 export class GlossaryUpdateComponent implements OnInit {
+  account: Account;
   isSaving: boolean;
 
   users: IUser[];
@@ -35,6 +38,7 @@ export class GlossaryUpdateComponent implements OnInit {
   });
 
   constructor(
+    private accountService: AccountService,
     protected jhiAlertService: JhiAlertService,
     protected glossaryService: GlossaryService,
     protected userService: UserService,
@@ -47,6 +51,9 @@ export class GlossaryUpdateComponent implements OnInit {
     this.isSaving = false;
     this.activatedRoute.data.subscribe(({ glossary }) => {
       this.updateForm(glossary);
+    });
+    this.accountService.identity().subscribe((account: Account) => {
+      this.account = account;
     });
     this.userService
       .query()

@@ -9,6 +9,8 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * A Glossary.
  */
@@ -23,12 +25,15 @@ public class Glossary implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull
     @Column(name = "glos_name")
     private String glosName;
 
+    @NotNull
     @Column(name = "lang_1")
     private String lang1;
 
+    @NotNull
     @Column(name = "lang_2")
     private String lang2;
 

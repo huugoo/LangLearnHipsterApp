@@ -2,25 +2,25 @@
   "langLearnHipsterApp": {
     "glossary": {
       "home": {
-        "title": "Glossaries",
-        "createLabel": "Skapa en ny Glossary",
-        "createOrEditLabel": "Skapa eller ändra en Glossary",
+        "title": "Gloslistor",
+        "createLabel": "Skapa en ny Gloslista",
+        "createOrEditLabel": "Skapa eller ändra en Gloslista",
         "notFound": "No Glossaries found"
       },
-      "created": "En ny Glossary är skapad med id {{ param }}",
-      "updated": "En Glossary är uppdaterad med id  {{ param }}",
-      "deleted": "En Glossary är borttagen med id  {{ param }}",
+      "created": "En ny Gloslista är skapad med id {{ param }}",
+      "updated": "En Gloslista är uppdaterad med id  {{ param }}",
+      "deleted": "En Gloslista är borttagen med id  {{ param }}",
       "delete": {
-        "question": "Är du säker på att du vill ta bort Glossary {{ id }}?"
+        "question": "Är du säker på att du vill ta bort Gloslistan {{ id }}?"
       },
       "detail": {
-        "title": "Glossary"
+        "title": "Gloslista"
       },
-      "glosName": "Glos Name",
-      "lang1": "Lang 1",
-      "lang2": "Lang 2",
-      "user": "User",
-      "words": "Words"
+      "glosName": "Namn",
+      "lang1": "Språk 1",
+      "lang2": "Språk 2",
+      "user": "Användare",
+      "words": "Ord"
     }
   }
 }

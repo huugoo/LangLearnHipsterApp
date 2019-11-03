@@ -4,6 +4,8 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import java.io.Serializable;
 import java.util.HashSet;
@@ -23,9 +25,13 @@ public class Words implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull
+	@Size(max = 50)
     @Column(name = "word_lang_1")
     private String wordLang1;
 
+    @NotNull
+	@Size(max = 50)
     @Column(name = "word_lang_2")
     private String wordLang2;
 
